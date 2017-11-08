@@ -1,0 +1,55 @@
+<HTML>
+<HEAD>
+	<TITLE>Cadastro de Ve&iacute;culo</TITLE>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+		
+</HEAD>
+<BODY>
+<div id="i1a">
+Clique aqui!
+</div>
+<FIELDSET>
+	<LEGEND>Cadastro de Ve&iacute;culo</LEGEND>
+	<FORM>
+		<LABEL>Marca:
+			<SELECT id="marca" name="marca">
+				<OPTION VALUE="GM">Chevrolet</OPTION>
+				<OPTION VALUE="FORD">FORD</OPTION>
+				<OPTION VALUE="FIAT">FIAT</OPTION>
+			</SELECT>
+		</LABEL>
+		<LABEL>Modelo:
+			<SELECT id="modelo" name="modelo">
+				<OPTION VALUE="Celta">Celta</OPTION>
+				<OPTION VALUE="Focus">Focus</OPTION>
+				<OPTION VALUE="Uno">Uno</OPTION>
+			</SELECT>
+		</LABEL>
+	</FORM>
+</FIELDSET>
+
+	<script>
+		$(document).ready(function(){
+			$('#i1a').click(function(){
+				alert('Oi!!!!!');
+			
+			});
+			
+			$('#marca').change(function(){
+				//alert($('#marca').val());
+				console.log($('#marca').val());
+				if($('#marca').val()=="GM"){
+					alert('E da chevrolet');
+				}else if($('#marca').val()=="FORD"){
+					alert('Parabens comprou um carro bom');
+				}else{
+					alert('Fiat é forte');
+				}
+					
+			});
+		});
+		
+	</script>
+</BODY>
+</HTML>

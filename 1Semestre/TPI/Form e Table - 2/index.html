@@ -1,0 +1,193 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+   </head>
+   <body>
+    <style>
+        .im{
+            width:30px;
+        }
+         h3{
+         margin: 0px
+         }
+      #aa{
+         border-top:3px solid; 
+      }
+      #mTable,#op{
+                 border:3px solid; 
+      }
+         .butao0{
+         width: 150px
+         }
+      .f25{
+        width:15%;
+          margin: 0px
+      }
+         #conteiner{
+         width: 391px;
+         }
+      #principal{
+        border:3px solid;
+      }
+      </style>
+   <body>
+      <div id="conteiner">
+      <center>
+         <h1>Escola virtual</h1>
+         <h2>Formulario de pre-matricula</h2>
+      </center>
+      <form action="" method="post">
+         <table id="principal">
+            <tr>
+               <td>
+                  <table>
+                     <tr>
+                        <td>Nome do aluno</td>
+                        <td><input type="text" name="numero" class="fill"/> </td>
+                     </tr>
+                     <tr>
+                        <td>Nascimento (DD/MM/AAAA)</td>
+                        <td>
+                       <input class="f25" type="text" name="data" id="data"/> /
+                       <input class="f25" type="text" name="data" id="data"/> /
+                       <input class="f25" type="text" name="data" id="data"/>
+                       </td>
+                     <tr>
+                        <td>Nome da Mãe</td>
+                        <td><input type="text" name="mae" class="fill"/> </td>
+                     </tr>
+                     <tr>
+                        <td>Nome do Pai</td>
+                        <td><input type="text" name="Pai" class="fill"/> </td>
+                     </tr>
+                     <tr>
+                        <td>Telefone</td>
+                        <td><input type="text" name="numero" class="fill" </td>
+                     </tr>
+                  </table>
+                  <table id="aa">
+                     </td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <table>
+                              <tr>
+                                 <td colspan="3">
+                                    <h3>Informaçoes de matricula:</h3>
+                                 </td>
+                              </tr>
+                              <tr>
+								<td>Serie</td>
+								<td>Turno</td>
+								<td>Atividades Extracurriculares</td>
+                              </tr>
+							  <tr >
+				
+								<td>
+                                    <select name="seledata" id="seledata">
+                                       <option value="0">Serie</option>
+                                       <option value="2015">Pre-escola</option>
+                                       <option value="2016">1ºano</option>
+                                       <option value="2017">2ºano</option>
+                                       <option value="2017">3ºano</option>
+                                    </select>
+                                 </td>
+								 <td><input type="radio" name="Turno" value="Manha"/>  Manha</td>
+                                 <td><input type="checkbox" name="aInformatica" id="Informatica" value="Informatica" />Informatica </td>
+							  </tr>
+							  <tr>
+								<td rowspan="5"></td>
+								<td><input type="radio" name="Turno" value="Tarde">Tarde</td>
+								<td><input type="checkbox" name="Musica" id="Musica" value="Musica"/>Musica </td>
+							  </tr>
+								<tr>
+									<td rowspan="4"></td>
+									<td><input type="checkbox" name="Balet" id="Balet" value="Balet"/>Balet </td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" name="Pintura" id="Pintura" value="Pintura"/>Pintura </td>
+								</tr>
+								<tr>
+								<td><input type="checkbox" name="Judo" id="Judo" value="Judo"/>Judo </td>	
+								</tr>
+								<tr>
+									<td><input type="checkbox" name="Futebol" id="Futebol" value="Futebol"/>Futebol </td>
+								</tr>
+                             
+                           </table>
+                        </td>
+                     </tr>
+                  </table>
+				  </table>
+				  <center>
+                  <input class="butao0" type="submit" name="btncad" id="btncad" value="Enviar formulario">
+                  <input class="butao0" type="reset" name="btnlimpar" id="btnlimpar" value="limpar">    
+				  </center>
+                  <div/>
+         
+      </form>
+     
+     
+     
+     
+     
+     
+     <br><br><br>
+     
+     <table id="mTable">
+       <tr>
+         <td>Nome</td>
+         <td colspan="2"><input type="text" id="txt"/></td>
+       </tr>
+       <tr>
+         <td>Sexo</td>
+         <td colspan="2"><input type="radio" name="sx" id="sx"> Feminino  <input type="radio" name="sx" id="sx"> Masculino</td>
+       </tr>
+       <tr>
+         <td rowspan="3">
+           Escolaridade :
+           <select>
+             <option>1 Grau</option>
+             <option>2 Grau</option>
+             <option>Superior</option>
+           </select>
+         </td>
+       </tr>
+     </table>
+     <br><br><br>
+  <table id="op">
+    <tr>
+      <td>
+        Numero
+      </td>
+      <td>
+        
+      </td>
+    </tr>
+    <tr rowspan=3>
+      <td>
+        Bandeira
+      </td>
+      <td>
+        <input type="radio" name="s"/><img src="express.jpg" class="im">
+        <input type="radio" name="s"/><img src="visa.jpg" class="im">
+        <input type="radio" name="s"/><img src="master.jpg" class="im">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Validade
+      </td>
+      <td>
+               <select>
+             <option>2012</option>
+             <option>2013</option>
+             <option>2014</option>
+           </select>
+      </td>
+    </tr>
+    </table>
+   </body>
+</html>
+

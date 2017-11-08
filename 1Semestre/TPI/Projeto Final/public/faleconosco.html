@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./../css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.3.3/css/foundation.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.3.3/css/foundation.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.3.3/js/foundation.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.3.3/js/foundation/foundation.topbar.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.3.3/js/foundation/foundation.clearingmin.js"></script>
+</head>
+<body>
+ 
+<!--Back image-->
+<img id="background" src="http://www.goodwp.com/images/201104/goodwp.com_17635.jpg">
+<!--TopBar-->
+<nav class="top-bar alpha above" data-topbar role="navigation">
+   <ul class="title-area">
+      <li class="name">
+      <h1 class="white"><a href="./../index.html">Consecionaria Steam</a></h1>
+      
+      </li>
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+   </ul>
+   <section class="top-bar-section ">
+      <ul class="right">
+         <li><a href="clientes.html">Clientes</a></li>
+         <li><a href="localizacao.html">Localização</a></li>
+         <li><a href="faleconosco.html">Fale Conosco</a></li>
+      </ul>
+   </section>
+</nav>
+<!--Site Presentation-->
+<div id="mask">
+   <div class="alphaTitle">
+      <h1 class="white">Consecionaria Steam</h1>
+      <p>você tem o dinheiro, eu o carro</p>
+   </div>
+</div>
+<!--Content-->
+<div id="content" style="background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(100, 0, 0, 0.5)) ">
+   <div id="main-cotainer">
+      <center>
+          <h1 class="black">Fale Conosco</h1>
+        
+        <form style="width:80%">
+  <div class="row">
+    <div class="large-12 columns">
+      <label>Consessionaria
+        <input type="text" placeholder="Nome da consessionaria" />
+      </label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-4 columns">
+      <label>Assunto
+        <input type="text" placeholder="Digite o assunto" />
+      </label>
+    </div>
+    <div class="large-4 columns">
+      <label>Tipo
+        <input type="text" placeholder="Problemas, Sujestão..." />
+      </label>
+    </div>
+    <div class="Serviço">
+      <div class="row collapse">
+        <label>Seu E-mail</label>
+        <div class="small-3 columns">
+          <input type="text" placeholder="ex: example@pewdiepie.com" />
+        </div>
+        <div class="small-1 columns">
+          <span class="postfix">.com</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-12 columns">
+      <label>Estado
+        <select>
+          <option value="husker">SP</option>
+          <option value="starbuck">PR</option>
+          <option value="hotdog">RS</option>
+          <option value="apollo">AC</option>
+        </select>
+      </label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-6 columns">
+      <label>Genero</label>
+      <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Masculino</label>
+      <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Feminino</label>
+      <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonApache">Apache Helicopter</label>
+    </div>
+    <div class="large-6 columns">
+      <label>Escolha aleatoriamente, não consegui pensar em nada para por.<label>
+      <input id="checkbox1" type="checkbox"><label for="checkbox1">A</label>
+      <input id="checkbox2" type="checkbox"><label for="checkbox2">B</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-12 columns">
+      <label>Digite seu problema ou duvida.
+        <textarea placeholder="Seja gentil..."></textarea>
+      </label>
+    </div>
+  </div>
+</form>
+        <a class="button lower" onclick="sendMe()">Enviar</a>
+      </center>
+   </div>
+</div>
+
+
+</body>
+  <script>
+  $(document).foundation();
+    function sendMe(){
+      alert("Sua mensagem TALVEZ tenha sido enviada, não tenho certeza.")
+      alert("Não, não foi, tente novamente.")
+    }
+  </script>
+<html>
+
+
+

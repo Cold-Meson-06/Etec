@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="uft-8"/>
+		<title>Formularios</title>
+		<link rel="icon" href="https://avatars0.githubusercontent.com/u/9648865?v=3&s=16">
+		<style>
+		*{ 
+			font-family: 'Segoe UI', sans-serif;
+			font-size: 14px; 
+			font-style: normal; 
+		}
+		#f1{
+			width:250px;
+		}
+		#f2,#f3{
+			width:240px;
+		}
+		#f4{
+			width:300px;
+		}
+		.nota{
+			width:53px;
+		}
+		p{
+			margin:0px;
+			padding:0px;
+		}
+		
+		</style>
+	</head>
+	<body>
+		<fieldset id="f1">
+			<legend>Média</legend>
+			<form action=" " method="post">
+			<table>
+				<tr>
+					<td>Aluno :</td>
+					<td colspan="3"><input type="text" id="nameInput"/></td>
+				</tr>
+				<tr>
+					<td>Nota 1 :</td>  
+					<td><input type="number" id="nota1Input" value="0" class="nota"/></td>
+					<td>Nota 2 :</td>
+					<td><input type="number" id="nota2Input" value="0" class="nota"/></td>
+				</tr>
+				<tr>
+					<td>Nota 3 :</td>
+					<td><input type="number" id="nota3Input" value="0" class="nota"/></td>
+					<td>Nota 4 :</td>
+					<td><input type="number" id="nota4Input" value="0" class="nota"/></td>
+				</tr>
+				<tr>
+					<td>Média :</td>
+					<td colspan="3"><input type="text" id="mediaInput" value="0"/></td>
+				</tr>
+				<tr>
+					<td colspan="4"><input style="width:100px" type="button" value="Calcular" id="btnMedia" /></td>
+				</tr>
+			</table>
+			</form>
+		</fieldset>
+	
+		<br><br>
+		
+		<fieldset id="f2">
+			<legend>Carga Horaria</legend>
+			<form action=" " method="post">
+				<table>
+					<tr>
+						<td>Disciplina:</td>
+						<td colspan="3"><input type="text" id="disciplinaInput"/></td>
+					</tr>
+					<tr>
+						<td><input type="radio" name="mat" id="mat1" value="Inf"></td>
+						<td>Informatica</td>
+						<td><input type="radio" name="mat" id="mat2" value="Adm"></td>
+						<td>Administração</td>
+					</tr>
+					<tr>
+						<td><input type="radio" name="mat" id="mat3" value="Sec"> </td>
+						<td>Secretariado</td>
+						<td><input type="radio" name="mat" id="mat4" value="Nut"> </td>
+						<td>Nutrição</td>
+					</tr>
+					
+					<tr>
+						<td>Carga Horaria:</td>
+						<td colspan="3"><input type="number" id="cargaHoraria" /></td>			
+					</tr> 
+					<tr>	
+						<td colspan="4"><input type="button" value="Gerar" id="btnCargaH"/></td>
+					</tr>
+				</table>
+			</form>
+		</fieldset>
+
+		<br><br>
+		
+		<fieldset id="f3">
+			<legend>Livro</legend>
+			<form action=" " method="post">
+				Titlulo:   <input type="text" id="titleInput"/><br><br>
+				<input type="radio" name="gen" id="gen1" value="F"> Terra
+				<input type="radio" name="gen" id="gen2" value="A"> Ficção<br><br>
+				<input type="radio" name="gen" id="gen3" value="D"> Comédia
+				<input type="radio" name="gen" id="gen4" value="N"> Romançe<br><br>
+				Valor:   <input type="number" id="valor" /><br><br>
+				<input type="button" value="Cadastrar" id="btnCadastrar"/>
+			</form>
+		</fieldset>
+		
+		<br><br>
+		
+		<fieldset id="f4">
+			<legend>Imovel</legend>
+			<form action=" " method="post">
+				Imovel:<input type="text" id="emailInput"/><br><br>
+				
+				Tipo  :
+					<input type="radio" name="type2" id="ty1" value="al"> Aluguel  
+					<input type="radio" name="type2" id="ty2" value="ve"> Venda<br><br>
+				
+				<input type="checkbox" name="typ" id="typ1" value="I"> Armarios Planejados
+				<input type="checkbox" name="typ" id="typ2" value="A"> Quarto de serviço<br><br>
+				<input type="checkbox" name="typ" id="typ3" value="S"> Garagem
+				<input type="checkbox" name="typ" id="typ4" value="N"> Quintal
+				<input type="checkbox" name="typ" id="typ5" value="S"> Varanda<br><br>
+				
+				Valor:  <input type="number" id="valor" /><br><br>
+				<input type="button" value="Solicitar" id="btnSolicitar"/>
+			</form>
+		</fieldset>
+		
+	<body>
+	<!--
+		Tipos de <input/>
+		type="text"     : Caixa de texto;
+		type="submit"   : Envia as informações;
+		type="reset"    : Limpa o form;
+		type="radio"    : Unica escolha;
+		type="checkbox" : Multipla escolha;
+	-->
+	<script>
+		const $ = s => document.getElementById(s);
+		
+		const result = $("mediaInput")
+
+		const btn = $("btnMedia")
+
+		btn.onclick = e=> {
+			const notas = [$("nota1Input"),$("nota2Input"),$("nota3Input"),$("nota4Input")].map(i => Number(i.value))
+			const media = (notas.reduce((v,a)=>a+=v))/notas.length;
+			result.value = media
+		}
+	</script>
+</html>

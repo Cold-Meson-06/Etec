@@ -1,0 +1,51 @@
+<?php
+include('conexao.php');
+?>
+<!doctype html>
+<HTML>
+	<HEAD>
+		<TITLE></TITLE>
+		<link rel="stylesheet" href="foundation/css/foundation.css">
+		<script src="foundation/js/vendor/modernizr.js"></script>
+	</HEAD>
+	<BODY>
+	<div class="row">
+		<div class="large-12 columns">
+		<FORM action="bdProduto.php" method="post" name="frmProduto" id="frmProduto">
+			<div class="small-3 columns">
+				<LABEL>Id:
+					<input type="text" name="txtId" id="txtId" />
+				</LABEL>
+			</div>
+			<div class="small-3 columns">
+			<LABEL>Descri&ccedil;&atilde;o:
+				<input type="text" name="txtDesc" id="txtDesc" />
+			</LABEL>
+			</div>
+			<div class="small-3 columns">
+			<LABEL>Pre&ccedil;o:
+				<input type="text" name="txtPreco" id="txtPreco" />
+			</LABEL>
+			</div>
+			<div class="small-3 columns">
+			<LABEL>Data de validade:
+				<input type="date" name="txtDtVal" id="txtDtVal" />
+			</LABEL>
+			</div>
+			<div class="small-12 columns">
+			<input type="submit" class="button right" name="btnCadastrar" id="btnCadastrar" value="Cadastrar"/>
+			</div>
+		</FORM>
+		</div>
+		</div>
+		
+		<script src="foundation/js/vendor/jquery.js"></script>
+		<script src="foundation/js/vendor/foundation.min.js"></script>
+		<script src="foundation/js/foundation/foundation.js"></script> 
+		<script src="foundation/js/foundation/foundation.alert.js"></script>
+		<script>
+		$(document).foundation();
+		</script>
+
+	</BODY>
+</HTML>

@@ -1,0 +1,63 @@
+/* CSS relacionado ao Form */
+form {
+    background: #ddd;
+    width:400px;
+    padding: 8px;
+    border: 2px solid #666;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+input.btnCadastrar{
+    margin-top:10px;
+}
+
+/* CSS relacionado a mensagens */
+p.errMessage{
+    width:400px;
+    padding: 8px;
+    border: 2px solid #ff0000;
+    background: #ff9999;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+p.infMessage{
+    width:400px;
+    padding: 8px;
+    border: 2px solid #0000ff;
+    background: #9999ff;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+p.sucMessage{
+    width:400px;
+    padding: 8px;
+    border: 2px solid #00ff00;
+    background: #99ff99;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* CSS relacionado a tabela */
+table{
+    width:400px;
+}
+table.sqlResult{
+    border: 1px solid #455;
+}
+
+table.sqlResult, td {
+    border-collapse: collapse;
+}
+
+td {
+    font-family: "Segoe UI", Arial, sans-serif;
+    padding: 3px;
+    min-width: calc(400px / 7);
+}
+
+tr.tableHeader {
+    background: #aaffff;
+}
+
+tr.tableRow {
+    background: #ffffaa;
+}

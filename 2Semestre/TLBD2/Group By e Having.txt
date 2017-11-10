@@ -1,0 +1,48 @@
+A cláusula GROUP BY organiza dados em grupos, produzindo sumários. A cláusula HAVING estabelece condições para listar esses grupos. 
+Dizemos que a cláusula HAVING está para a cláusula GROUP BY, assim como a cláusula WHERE está para o comando SELECT.
+
+A sintaxe do comando SELECT com as cláusulas GROUP BY e HAVING é:
+
+SELECT <coluna(s)>
+FROM <tabela>
+WHERE <condições>
+GROUP BY <coluna(s)>
+HAVING <condições>
+
+A GROUP BY é usada em conjunto com as funções de agregação ao grupo por uma ou mais colunas conjunto de resultados.
+A cláusula HAVING foi adicionada ao SQL porque a palavra-chave WHERE não pode ser usado com funções de agregação.
+
+
+
+
+Comandos:
+
+1)Qual o total das vendas?
+SELECT SUM(valor) FROM vendas
+
+2)Qual o total das vendas de cada vendedor?
+SELECT vendedor, SUM(valor) FROM vendas GROUP BY vendedor
+
+3)Quantas vendas foram feitas?
+SELECT COUNT(*) FROM vendas
+
+4)Quantas vendas cada vendedor fez?
+SELECT vendedor, COUNT(*) FROM vendas GROUP BY vendedor
+
+5)Qual a menor e a maior venda?
+SELECT MIN(valor), MAX(valor) FROM vendas
+
+6)Qual a menor e a maior venda de cada vendedor?
+SELECT vendedor, MIN(valor), MAX(valor) FROM vendas GROUP BY vendedor
+
+7)Qual a média das vendas dos dias 15 e 17?
+SELECT data, AVG(valor) FROM vendas WHERE data IN ('2008-04-15', '2008-04-17') GROUP BY data
+
+8)Em quais dias as vendas superaram 3.000?
+SELECT data, SUM(valor) FROM vendas GROUP BY data HAVING SUM(valor) >3000
+
+9)Em quais dias, no período de 14 a 16/04/2008, a média das vendas foi menor que 2000?
+SELECT data, AVG(valor) FROM vendas WHERE data BETWEEN '2008-04-14' AND '2008-04-16' GROUP BY data HAVING AVG(valor) <2000
+
+10)Que vendedores fecharam mais de 2 vendas nos dias 14, 16 e 18/04/2008?
+SELECT vendedor, COUNT(*) FROM vendas WHERE data IN ('2008-04-14', '2008-04-16', '2008-04-18') GROUP BY vendedor HAVING COUNT(*) >2

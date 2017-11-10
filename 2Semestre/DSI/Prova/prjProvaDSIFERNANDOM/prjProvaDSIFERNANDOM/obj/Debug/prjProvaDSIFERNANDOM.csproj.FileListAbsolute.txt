@@ -1,0 +1,9 @@
+C:\Users\TEMP.ETEHORT.012\Desktop\Prova\prjProvaDSIFERNANDOM\prjProvaDSIFERNANDOM\bin\Debug\prjProvaDSIFERNANDOM.exe.config
+C:\Users\TEMP.ETEHORT.012\Desktop\Prova\prjProvaDSIFERNANDOM\prjProvaDSIFERNANDOM\bin\Debug\prjProvaDSIFERNANDOM.exe
+C:\Users\TEMP.ETEHORT.012\Desktop\Prova\prjProvaDSIFERNANDOM\prjProvaDSIFERNANDOM\bin\Debug\prjProvaDSIFERNANDOM.pdb
+C:\Users\TEMP.ETEHORT.012\Desktop\Prova\prjProvaDSIFERNANDOM\prjProvaDSIFERNANDOM\obj\Debug\prjProvaDSIFERNANDOM.csprojResolveAssemblyReference.cache
+C:\Users\TEMP.ETEHORT.012\Desktop\Prova\prjProvaDSIFERNANDOM\prjProvaDSIFERNANDOM\obj\Debug\prjProvaDSIFERNANDOM.Form1.resources
+C:\Users\TEMP.ETEHORT.012\Desktop\Prova\prjProvaDSIFERNANDOM\prjProvaDSIFERNANDOM\obj\Debug\prjProvaDSIFERNANDOM.Properties.Resources.resources
+C:\Users\TEMP.ETEHORT.012\Desktop\Prova\prjProvaDSIFERNANDOM\prjProvaDSIFERNANDOM\obj\Debug\prjProvaDSIFERNANDOM.csproj.GenerateResource.Cache
+C:\Users\TEMP.ETEHORT.012\Desktop\Prova\prjProvaDSIFERNANDOM\prjProvaDSIFERNANDOM\obj\Debug\prjProvaDSIFERNANDOM.exe
+C:\Users\TEMP.ETEHORT.012\Desktop\Prova\prjProvaDSIFERNANDOM\prjProvaDSIFERNANDOM\obj\Debug\prjProvaDSIFERNANDOM.pdb

@@ -1,0 +1,9 @@
+G:\Trabalho\pjrJogoDaMemoria\pjrJogoDaMemoria\bin\Debug\pjrJogoDaMemoria.exe.config
+G:\Trabalho\pjrJogoDaMemoria\pjrJogoDaMemoria\obj\Debug\pjrJogoDaMemoria.csprojResolveAssemblyReference.cache
+G:\Trabalho\pjrJogoDaMemoria\pjrJogoDaMemoria\obj\Debug\pjrJogoDaMemoria.Form1.resources
+G:\Trabalho\pjrJogoDaMemoria\pjrJogoDaMemoria\obj\Debug\pjrJogoDaMemoria.csproj.GenerateResource.Cache
+G:\Trabalho\pjrJogoDaMemoria\pjrJogoDaMemoria\bin\Debug\pjrJogoDaMemoria.exe
+G:\Trabalho\pjrJogoDaMemoria\pjrJogoDaMemoria\bin\Debug\pjrJogoDaMemoria.pdb
+G:\Trabalho\pjrJogoDaMemoria\pjrJogoDaMemoria\obj\Debug\pjrJogoDaMemoria.Properties.Resources.resources
+G:\Trabalho\pjrJogoDaMemoria\pjrJogoDaMemoria\obj\Debug\pjrJogoDaMemoria.exe
+G:\Trabalho\pjrJogoDaMemoria\pjrJogoDaMemoria\obj\Debug\pjrJogoDaMemoria.pdb
